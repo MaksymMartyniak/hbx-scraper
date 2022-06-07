@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  web:
+    build:
+      context: .
+    command: bash -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    ports:
+      - "8000:8000"
+    hostname: 0.0.0.0
+
+  selenium:
+
+    image: selenium/standalone-firefox
+    ports:
+      - "4444:4444"
+    hostname: 0.0.0.0
