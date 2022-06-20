@@ -96,7 +96,7 @@ class ClothingApiView(APIView):
             f"berrics:mb-xs hypebae:text-sm hypebae:font-medium']/a[1]"
         )
         product_name_xpath = (
-            f"//div[@class='hbx:uppercase mb-md berrics:text-muted "
+            f"//div[@class='hbx:uppercase mb-lg berrics:text-muted "
             f"hypebae:text-dark hypebae:text-sm']/a[1]"
         )
         price_xpath = (
